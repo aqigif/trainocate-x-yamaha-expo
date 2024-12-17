@@ -1,11 +1,11 @@
-import {
-    Image,
-    StyleSheet,
-    TextInput,
-    View
-} from "react-native";
+import { useState } from "react";
+import { Image, Text, TextInput, View } from "react-native";
+import Button from "./Button";
+import useSignIn from "../hooks/useSignin";
 
-export default function BasicComponent() {
+function BasicComponent() {
+  const {email, setEmail, handleSubmit, loading} = useSignIn()
+
   return (
     <View>
       <View
@@ -16,7 +16,14 @@ export default function BasicComponent() {
           paddingHorizontal: 20,
         }}
       >
-        <TextInput style={{ backgroundColor: "white" }} placeholder="input" />
+        <TextInput
+          value={email}
+          onChangeText={setEmail}
+          style={{ backgroundColor: "white" }}
+          placeholder="input"
+        />
+        <Text>{email}</Text>
+        <Button onPress={handleSubmit} title="Submit" loading={loading} />
         <View style={{ height: 20 }} />
         <TextInput
           style={{ backgroundColor: "white" }}
@@ -52,3 +59,5 @@ export default function BasicComponent() {
     </View>
   );
 }
+
+export default BasicComponent;

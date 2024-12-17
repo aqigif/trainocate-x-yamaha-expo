@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import Button from "./Button";
 
-export default function Touches({text}: {text: string}) {
+function Touches({text}: {text: string}) {
   return (
     <View style={{ height: 800, backgroundColor: "blue" }}>
       <Text style={{ color: "white", fontSize: 45, fontWeight: "bold" }}>
@@ -80,3 +80,5 @@ export default function Touches({text}: {text: string}) {
     </View>
   );
 }
+
+export default Touches;

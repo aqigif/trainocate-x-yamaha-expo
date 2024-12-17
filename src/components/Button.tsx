@@ -1,24 +1,30 @@
-import { Pressable, Text, View } from "react-native";
+import { ActivityIndicator, Pressable, Text, View } from "react-native";
 
-export default function Button({
+function Button({
   title,
   onPress,
+  loading,
 }: {
   title: string;
   onPress: () => void;
+  loading?: boolean;
 }) {
   return (
-    <Pressable
-      style={{ backgroundColor: "green" }}
-      onPress={onPress}
-    >
+    <Pressable style={{ backgroundColor: "red" }} onPress={onPress}>
       {({ pressed }) => (
         <View
-          style={pressed ? { paddingVertical: 20 } : { paddingVertical: 10 }}
+          style={
+            pressed
+              ? { paddingVertical: 20, flexDirection: "row" }
+              : { paddingVertical: 10, flexDirection: "row" }
+          }
         >
-          <Text style={{ color: "black", textAlign: "center" }}>{title}</Text>
+          {loading && <ActivityIndicator />}
+          <Text style={{ color: "white", textAlign: "center" }}>{title}</Text>
         </View>
       )}
     </Pressable>
   );
 }
+
+export default Button;

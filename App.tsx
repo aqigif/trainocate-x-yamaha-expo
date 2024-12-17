@@ -1,14 +1,26 @@
+import { useState } from "react";
 import { ScrollView, StyleSheet } from "react-native";
-import BasicComponent from "./src/components/BasicComponent";
-import Touches from "./src/components/Touches";
 import AnimatedExample from "./src/components/AnimatedExample";
+import BasicComponent from "./src/components/BasicComponent";
+import Button from "./src/components/Button";
+import Touches from "./src/components/Touches";
+import ModalExample from "./src/components/ModalExample";
 
-export default function App() {
+const App = () => {
+  const [render, setIsRender] = useState(false);
+
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      <Touches text="coba coba" />
-      <BasicComponent />
-      <AnimatedExample />
+      <Button onPress={() => setIsRender(!render)} title="render" />
+      {render ? (
+        <>
+          <Touches text="coba coba" />
+          <BasicComponent />
+          <AnimatedExample />
+        </>
+      ) : (
+          <ModalExample />
+      )}
     </ScrollView>
   );
 }
@@ -16,5 +28,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop: 60,
   },
 });
+
+export default App;
