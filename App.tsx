@@ -1,35 +1,23 @@
-import { useState } from "react";
-import { ScrollView, StyleSheet } from "react-native";
-import AnimatedExample from "./src/components/AnimatedExample";
-import BasicComponent from "./src/components/BasicComponent";
-import Button from "./src/components/Button";
-import Touches from "./src/components/Touches";
-import ModalExample from "./src/components/ModalExample";
+import { createStaticNavigation } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import * as React from 'react';
+import Home from './src/screens/Home';
+import Login from './src/screens/Login';
 
-const App = () => {
-  const [render, setIsRender] = useState(false);
-
-  return (
-    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      <Button onPress={() => setIsRender(!render)} title="render" />
-      {render ? (
-        <>
-          <Touches text="coba coba" />
-          <BasicComponent />
-          <AnimatedExample />
-        </>
-      ) : (
-          <ModalExample />
-      )}
-    </ScrollView>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 60,
+export const RootStack = createNativeStackNavigator({
+  screens: {
+    Login: Login,
+    Home: {
+      screen: Home,
+      options: {
+        title: 'Trainocate',
+      },
+    },
   },
 });
 
-export default App;
+const Navigation = createStaticNavigation(RootStack);
+
+export default function App() {
+  return <Navigation />;
+}
