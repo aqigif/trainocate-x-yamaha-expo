@@ -18,7 +18,10 @@ function BasicComponent() {
       >
         <TextInput
           value={email}
-          onChangeText={setEmail}
+          onChangeText={(text) => {
+            setEmail(text)
+            //da
+          }}
           style={{ backgroundColor: "white" }}
           placeholder="input"
         />

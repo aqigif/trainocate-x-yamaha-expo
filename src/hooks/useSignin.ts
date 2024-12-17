@@ -1,8 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const useSignIn = () => {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
+
+  // when enter component
+  useEffect(() => {
+    // method
+    console.log("get data...");
+    // when exit component
+    return () => {
+      console.log('quit component')
+    }
+  }, []);
+
+
+  // when enter and listen to data component
+  useEffect(() => {
+    // method
+    console.log("update....");
+  }, [email]);
+
 
   const handleSubmit = () => {
     setLoading(true);
