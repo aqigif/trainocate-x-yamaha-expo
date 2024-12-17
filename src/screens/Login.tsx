@@ -1,6 +1,6 @@
-import { StyleSheet, Text, View } from "react-native";
-import Button from "../components/Button";
 import { NavigationProp, useNavigation } from "@react-navigation/native";
+import { Text, View } from "react-native";
+import Button from "../components/Button";
 
 const Login = () => {
   const navigation = useNavigation<NavigationProp<any>>();
