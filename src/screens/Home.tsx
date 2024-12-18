@@ -5,6 +5,7 @@ import BasicComponent from "../components/BasicComponent";
 import Button from "../components/Button";
 import Touches from "../components/Touches";
 import ModalExample from "../components/ModalExample";
+import React from "react";
 
 const Home = () => {
   const [render, setIsRender] = useState(false);

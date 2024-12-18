@@ -5,6 +5,7 @@ import Home from './src/screens/Home';
 import Login from './src/screens/Login';
 
 export const RootStack = createNativeStackNavigator({
+  // initialRouteName: 'PokemonList',
   screens: {
     Login: Login,
     Home: {
@@ -13,6 +14,8 @@ export const RootStack = createNativeStackNavigator({
         title: 'Trainocate',
       },
     },
+    // PokemonList: PokemonList
+    // PokemonDetail: PokemonDetail
   },
 });
 
