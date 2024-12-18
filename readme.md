@@ -33,3 +33,15 @@
     - ternary operator / conditional statement
 - navigation: react-navigation 
 ```
+
+# Day 2
+```
+- Debugging with j
+- Typescript fixing
+- Folder And Code Structure
+- Redux
+- Pokemon App
+  - List
+  - Add
+  - Delete
+```
