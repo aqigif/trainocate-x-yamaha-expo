@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   grid: {
     flexDirection: "row",
     flexWrap: "wrap",
-    justifyContent: "space-between",
+    justifyContent: 'space-evenly'
   },
   gridItem: {
     width: "30%", // Adjust this value for grid item width

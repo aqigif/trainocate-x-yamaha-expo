@@ -1,0 +1,1 @@
+export const ADD_TO_MY_POKEMON = "ADD_TO_MY_POKEMON";

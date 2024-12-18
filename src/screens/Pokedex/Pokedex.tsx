@@ -16,7 +16,7 @@ import useNavigationType from "../../hooks/useNavigationType";
 type Props = StaticScreenProps<{}>;
 
 const Pokedex = ({}: Props) => {
-  const { pokemons } = usePokedex();
+  const { pokemons, myPokemons, addToMyPokemon } = usePokedex();
   const navigation = useNavigationType();
 
   return (
@@ -42,6 +42,27 @@ const Pokedex = ({}: Props) => {
             <Text>ini empty</Text>
           ) : (
             pokemons.map((pokemon, index) => (
+              <PokeCard
+                title={pokemon.name}
+                num={pokemon.id}
+                image={pokemon.image}
+                // onPress={() =>
+                //   navigation.navigate("PokemonDetail", { id: pokemon.id })
+                // }
+                onPress={() => {
+                  addToMyPokemon(pokemon)
+                }}
+              />
+            ))
+          )}
+        </View>
+        
+        <Text>My Pokemon: </Text>
+        <View style={styles.grid}>
+          {myPokemons.length === 0 ? (
+            <Text>kamu belum punya koleksi pokemon</Text>
+          ) : (
+            myPokemons.map((pokemon, index) => (
               <PokeCard
                 title={pokemon.name}
                 num={pokemon.id}
