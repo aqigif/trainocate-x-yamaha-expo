@@ -1,74 +1,12 @@
 export const pokemons = [
-  {
-    title: "Bulbasaur_1",
-    num: "1",
-    image:
-      "https://storage.googleapis.com/kagglesdsdata/datasets/6799/1408656/pokemon/pokemon/1.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20241217%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241217T135111Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2900e7e3d9502fba930adde8b51f94f0ac9b88f3a421ab8bf722687d54331ea7d4a2a42bb98ebfbb69fc9cf6626b856fde5690c614afb3bd8e648c47214d4d7904612aeaf9f28e69dfa94949af032c6037b8271d5a87373483c75d0e521740f51b0208a7d372f5e3094898936c5eb5cd4d07169ceb15f325df5c9b17fb082682d9f4530bc038f9cc853e9c0f54219b86f61a664da7ce3e769d4488dbef980c7ced3df4c3cbe922c52ec37749d941b228605e389f25d7c6101f846050d569e9cbe2fea46dac978f959d8790f900de12bbf572ea1b254360b01059f2578ac64225fb54124661dee551aa7eadd2ba9feb2d2f9bddb87c6c7c16e34537d540b7c170",
-  },
-  {
-    title: "Bulbasaur_2",
-    num: "2",
-    image:
-      "https://storage.googleapis.com/kagglesdsdata/datasets/6799/1408656/pokemon/pokemon/1.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20241217%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241217T135111Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2900e7e3d9502fba930adde8b51f94f0ac9b88f3a421ab8bf722687d54331ea7d4a2a42bb98ebfbb69fc9cf6626b856fde5690c614afb3bd8e648c47214d4d7904612aeaf9f28e69dfa94949af032c6037b8271d5a87373483c75d0e521740f51b0208a7d372f5e3094898936c5eb5cd4d07169ceb15f325df5c9b17fb082682d9f4530bc038f9cc853e9c0f54219b86f61a664da7ce3e769d4488dbef980c7ced3df4c3cbe922c52ec37749d941b228605e389f25d7c6101f846050d569e9cbe2fea46dac978f959d8790f900de12bbf572ea1b254360b01059f2578ac64225fb54124661dee551aa7eadd2ba9feb2d2f9bddb87c6c7c16e34537d540b7c170",
-  },
-  {
-    title: "Bulbasaur_3",
-    num: "3",
-    image:
-      "https://storage.googleapis.com/kagglesdsdata/datasets/6799/1408656/pokemon/pokemon/1.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20241217%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241217T135111Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2900e7e3d9502fba930adde8b51f94f0ac9b88f3a421ab8bf722687d54331ea7d4a2a42bb98ebfbb69fc9cf6626b856fde5690c614afb3bd8e648c47214d4d7904612aeaf9f28e69dfa94949af032c6037b8271d5a87373483c75d0e521740f51b0208a7d372f5e3094898936c5eb5cd4d07169ceb15f325df5c9b17fb082682d9f4530bc038f9cc853e9c0f54219b86f61a664da7ce3e769d4488dbef980c7ced3df4c3cbe922c52ec37749d941b228605e389f25d7c6101f846050d569e9cbe2fea46dac978f959d8790f900de12bbf572ea1b254360b01059f2578ac64225fb54124661dee551aa7eadd2ba9feb2d2f9bddb87c6c7c16e34537d540b7c170",
-  },
-  {
-    title: "Bulbasaur_4",
-    num: "4",
-    image:
-      "https://storage.googleapis.com/kagglesdsdata/datasets/6799/1408656/pokemon/pokemon/1.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20241217%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241217T135111Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2900e7e3d9502fba930adde8b51f94f0ac9b88f3a421ab8bf722687d54331ea7d4a2a42bb98ebfbb69fc9cf6626b856fde5690c614afb3bd8e648c47214d4d7904612aeaf9f28e69dfa94949af032c6037b8271d5a87373483c75d0e521740f51b0208a7d372f5e3094898936c5eb5cd4d07169ceb15f325df5c9b17fb082682d9f4530bc038f9cc853e9c0f54219b86f61a664da7ce3e769d4488dbef980c7ced3df4c3cbe922c52ec37749d941b228605e389f25d7c6101f846050d569e9cbe2fea46dac978f959d8790f900de12bbf572ea1b254360b01059f2578ac64225fb54124661dee551aa7eadd2ba9feb2d2f9bddb87c6c7c16e34537d540b7c170",
-  },
-  {
-    title: "Bulbasaur_5",
-    num: "5",
-    image:
-      "https://storage.googleapis.com/kagglesdsdata/datasets/6799/1408656/pokemon/pokemon/1.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20241217%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241217T135111Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2900e7e3d9502fba930adde8b51f94f0ac9b88f3a421ab8bf722687d54331ea7d4a2a42bb98ebfbb69fc9cf6626b856fde5690c614afb3bd8e648c47214d4d7904612aeaf9f28e69dfa94949af032c6037b8271d5a87373483c75d0e521740f51b0208a7d372f5e3094898936c5eb5cd4d07169ceb15f325df5c9b17fb082682d9f4530bc038f9cc853e9c0f54219b86f61a664da7ce3e769d4488dbef980c7ced3df4c3cbe922c52ec37749d941b228605e389f25d7c6101f846050d569e9cbe2fea46dac978f959d8790f900de12bbf572ea1b254360b01059f2578ac64225fb54124661dee551aa7eadd2ba9feb2d2f9bddb87c6c7c16e34537d540b7c170",
-  },
-  {
-    title: "Bulbasaur_6",
-    num: "6",
-    image:
-      "https://storage.googleapis.com/kagglesdsdata/datasets/6799/1408656/pokemon/pokemon/1.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20241217%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241217T135111Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2900e7e3d9502fba930adde8b51f94f0ac9b88f3a421ab8bf722687d54331ea7d4a2a42bb98ebfbb69fc9cf6626b856fde5690c614afb3bd8e648c47214d4d7904612aeaf9f28e69dfa94949af032c6037b8271d5a87373483c75d0e521740f51b0208a7d372f5e3094898936c5eb5cd4d07169ceb15f325df5c9b17fb082682d9f4530bc038f9cc853e9c0f54219b86f61a664da7ce3e769d4488dbef980c7ced3df4c3cbe922c52ec37749d941b228605e389f25d7c6101f846050d569e9cbe2fea46dac978f959d8790f900de12bbf572ea1b254360b01059f2578ac64225fb54124661dee551aa7eadd2ba9feb2d2f9bddb87c6c7c16e34537d540b7c170",
-  },
-  {
-    title: "Bulbasaur_7",
-    num: "7",
-    image:
-      "https://storage.googleapis.com/kagglesdsdata/datasets/6799/1408656/pokemon/pokemon/1.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20241217%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241217T135111Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2900e7e3d9502fba930adde8b51f94f0ac9b88f3a421ab8bf722687d54331ea7d4a2a42bb98ebfbb69fc9cf6626b856fde5690c614afb3bd8e648c47214d4d7904612aeaf9f28e69dfa94949af032c6037b8271d5a87373483c75d0e521740f51b0208a7d372f5e3094898936c5eb5cd4d07169ceb15f325df5c9b17fb082682d9f4530bc038f9cc853e9c0f54219b86f61a664da7ce3e769d4488dbef980c7ced3df4c3cbe922c52ec37749d941b228605e389f25d7c6101f846050d569e9cbe2fea46dac978f959d8790f900de12bbf572ea1b254360b01059f2578ac64225fb54124661dee551aa7eadd2ba9feb2d2f9bddb87c6c7c16e34537d540b7c170",
-  },
-  {
-    title: "Bulbasaur_8",
-    num: "8",
-    image:
-      "https://storage.googleapis.com/kagglesdsdata/datasets/6799/1408656/pokemon/pokemon/1.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20241217%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241217T135111Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2900e7e3d9502fba930adde8b51f94f0ac9b88f3a421ab8bf722687d54331ea7d4a2a42bb98ebfbb69fc9cf6626b856fde5690c614afb3bd8e648c47214d4d7904612aeaf9f28e69dfa94949af032c6037b8271d5a87373483c75d0e521740f51b0208a7d372f5e3094898936c5eb5cd4d07169ceb15f325df5c9b17fb082682d9f4530bc038f9cc853e9c0f54219b86f61a664da7ce3e769d4488dbef980c7ced3df4c3cbe922c52ec37749d941b228605e389f25d7c6101f846050d569e9cbe2fea46dac978f959d8790f900de12bbf572ea1b254360b01059f2578ac64225fb54124661dee551aa7eadd2ba9feb2d2f9bddb87c6c7c16e34537d540b7c170",
-  },
-  {
-    title: "Bulbasaur_9",
-    num: "9",
-    image:
-      "https://storage.googleapis.com/kagglesdsdata/datasets/6799/1408656/pokemon/pokemon/1.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20241217%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241217T135111Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2900e7e3d9502fba930adde8b51f94f0ac9b88f3a421ab8bf722687d54331ea7d4a2a42bb98ebfbb69fc9cf6626b856fde5690c614afb3bd8e648c47214d4d7904612aeaf9f28e69dfa94949af032c6037b8271d5a87373483c75d0e521740f51b0208a7d372f5e3094898936c5eb5cd4d07169ceb15f325df5c9b17fb082682d9f4530bc038f9cc853e9c0f54219b86f61a664da7ce3e769d4488dbef980c7ced3df4c3cbe922c52ec37749d941b228605e389f25d7c6101f846050d569e9cbe2fea46dac978f959d8790f900de12bbf572ea1b254360b01059f2578ac64225fb54124661dee551aa7eadd2ba9feb2d2f9bddb87c6c7c16e34537d540b7c170",
-  },
-  {
-    title: "Bulbasaur_7",
-    num: "7",
-    image:
-      "https://storage.googleapis.com/kagglesdsdata/datasets/6799/1408656/pokemon/pokemon/1.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20241217%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241217T135111Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2900e7e3d9502fba930adde8b51f94f0ac9b88f3a421ab8bf722687d54331ea7d4a2a42bb98ebfbb69fc9cf6626b856fde5690c614afb3bd8e648c47214d4d7904612aeaf9f28e69dfa94949af032c6037b8271d5a87373483c75d0e521740f51b0208a7d372f5e3094898936c5eb5cd4d07169ceb15f325df5c9b17fb082682d9f4530bc038f9cc853e9c0f54219b86f61a664da7ce3e769d4488dbef980c7ced3df4c3cbe922c52ec37749d941b228605e389f25d7c6101f846050d569e9cbe2fea46dac978f959d8790f900de12bbf572ea1b254360b01059f2578ac64225fb54124661dee551aa7eadd2ba9feb2d2f9bddb87c6c7c16e34537d540b7c170",
-  },
-  {
-    title: "Bulbasaur_8",
-    num: "8",
-    image:
-      "https://storage.googleapis.com/kagglesdsdata/datasets/6799/1408656/pokemon/pokemon/1.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20241217%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241217T135111Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2900e7e3d9502fba930adde8b51f94f0ac9b88f3a421ab8bf722687d54331ea7d4a2a42bb98ebfbb69fc9cf6626b856fde5690c614afb3bd8e648c47214d4d7904612aeaf9f28e69dfa94949af032c6037b8271d5a87373483c75d0e521740f51b0208a7d372f5e3094898936c5eb5cd4d07169ceb15f325df5c9b17fb082682d9f4530bc038f9cc853e9c0f54219b86f61a664da7ce3e769d4488dbef980c7ced3df4c3cbe922c52ec37749d941b228605e389f25d7c6101f846050d569e9cbe2fea46dac978f959d8790f900de12bbf572ea1b254360b01059f2578ac64225fb54124661dee551aa7eadd2ba9feb2d2f9bddb87c6c7c16e34537d540b7c170",
-  },
-  {
-    title: "Bulbasaur_9",
-    num: "9",
-    image:
-      "https://storage.googleapis.com/kagglesdsdata/datasets/6799/1408656/pokemon/pokemon/1.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20241217%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241217T135111Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2900e7e3d9502fba930adde8b51f94f0ac9b88f3a421ab8bf722687d54331ea7d4a2a42bb98ebfbb69fc9cf6626b856fde5690c614afb3bd8e648c47214d4d7904612aeaf9f28e69dfa94949af032c6037b8271d5a87373483c75d0e521740f51b0208a7d372f5e3094898936c5eb5cd4d07169ceb15f325df5c9b17fb082682d9f4530bc038f9cc853e9c0f54219b86f61a664da7ce3e769d4488dbef980c7ced3df4c3cbe922c52ec37749d941b228605e389f25d7c6101f846050d569e9cbe2fea46dac978f959d8790f900de12bbf572ea1b254360b01059f2578ac64225fb54124661dee551aa7eadd2ba9feb2d2f9bddb87c6c7c16e34537d540b7c170",
-  },
-];
+    { id: 1, name: "Bulbasaur", image: require("../../assets/img/bulbasaur.png"), description: "Bulbasaur is a grass/poison type Pokémon." },
+    { id: 2, name: "Charmander", image: require("../../assets/img/charmander.png"), description: "Charmander is a fire type Pokémon." },
+    { id: 3, name: "Squirtle", image: require("../../assets/img/squirtle.png"), description: "Squirtle is a water type Pokémon." },
+    { id: 4, name: "Pikachu", image: require("../../assets/img/pikachu.png"), description: "Pikachu is an electric type Pokémon." },
+    { id: 5, name: "Butterfree", image: require("../../assets/img/butterfree.png"), description: "Butterfree is a bug/flying type Pokémon." },
+    { id: 6, name: "Mew", image: require("../../assets/img/mew.png"), description: "Mew is a psychic type Pokémon." },
+    { id: 7, name: "Gastly", image: require("../../assets/img/gastly.png"), description: "Gastly is a ghost/poison type Pokémon." },
+    { id: 8, name: "Ditto", image: require("../../assets/img/ditto.png"), description: "Ditto can transform into any Pokémon." },
+    { id: 9, name: "Aron", image: require("../../assets/img/aron.png"), description: "Aron is a steel/rock type Pokémon." },
+  ];
+  

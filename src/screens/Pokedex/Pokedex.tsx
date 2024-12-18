@@ -44,11 +44,11 @@ const Pokedex = ({}: Props) => {
           ) : (
             pokemons.map((pokemon, index) => (
               <PokeCard
-                title={pokemon.title}
-                num={pokemon.num}
+                title={pokemon.name}
+                num={pokemon.id}
                 image={pokemon.image}
                 onPress={() =>
-                  navigation.navigate("PokemonDetail", { num: pokemon.num })
+                  navigation.navigate("PokemonDetail", { num: pokemon.id })
                 }
               />
             ))

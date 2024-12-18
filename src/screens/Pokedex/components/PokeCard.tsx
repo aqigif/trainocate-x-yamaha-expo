@@ -1,9 +1,9 @@
-import { Image, Pressable, Text, View } from "react-native";
+import { Image, ImageSourcePropType, Pressable, Text, View } from "react-native";
 
 interface PokeCardProps {
   title: string;
-  image: string;
-  num: string;
+  image: ImageSourcePropType;
+  num: number;
   onPress: () => void;
 }
 
@@ -12,7 +12,7 @@ export const PokeCard = ({ title, image, num, onPress }: PokeCardProps) => {
     <View style={styles.gridItem}>
       <Text style={{ textAlign: "right" }}>{num}</Text>
       <Pressable onPress={onPress}>
-        <Image source={{ uri: image }} style={styles.imageList} />
+        <Image source={image} style={styles.imageList} />
       </Pressable>
 
       <Text style={{ fontWeight: 500, textAlign: "center" }}>{title}</Text>

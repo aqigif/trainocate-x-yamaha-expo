@@ -4,7 +4,7 @@ import { Image, StyleSheet, Text, View } from "react-native";
 import usePokedexDetail from "./PokedexDetail.handler";
 
 type Props = StaticScreenProps<{
-  num: string;
+  num: number;
 }>;
 
 const PokedexDetail = ({ route }: Props) => {
@@ -17,8 +17,8 @@ const PokedexDetail = ({ route }: Props) => {
   
   return (
     <View style={styles.container}>
-      <Image source={{ uri: pokemon.image }} style={styles.image} />
-      <Text style={styles.name}>{pokemon.title}</Text>
+      <Image source={pokemon.image} style={styles.image} />
+      <Text style={styles.name}>{pokemon.name}</Text>
     </View>
   );
 };
