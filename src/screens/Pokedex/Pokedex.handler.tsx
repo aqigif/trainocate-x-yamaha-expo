@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { pokemons } from "../../data/pokemons";
 import { addToMyPoke } from "../../redux/actions/myPokeAction";
 import { useAppSelector } from "../../hooks/useReduxType";
