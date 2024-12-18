@@ -1,6 +1,6 @@
 import { ActivityIndicator, Pressable, Text, View } from "react-native";
 
-function Button({
+function button({
   title,
   onPress,
   loading,
@@ -27,4 +27,4 @@ function Button({
   );
 }
 
-export default Button;
+export default button;
