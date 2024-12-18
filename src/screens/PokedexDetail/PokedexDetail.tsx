@@ -4,12 +4,13 @@ import { Image, StyleSheet, Text, View } from "react-native";
 import usePokedexDetail from "./PokedexDetail.handler";
 
 type Props = StaticScreenProps<{
-  num: number;
+  id: number;
 }>;
 
 const PokedexDetail = ({ route }: Props) => {
-  const { num } = route.params;
-  const { pokemon } = usePokedexDetail({ num: num });
+  const { id } = route.params;
+ 
+  const { pokemon } = usePokedexDetail({ num: id });
 
   if (!pokemon) {
     return <Text>empty</Text>;

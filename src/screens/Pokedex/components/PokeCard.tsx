@@ -7,7 +7,7 @@ interface PokeCardProps {
   onPress: () => void;
 }
 
-export const PokeCard = ({ title, image, num, onPress }: PokeCardProps) => {
+export const PokeCard = ({title, image, num, onPress}: PokeCardProps) => {
   return (
     <View style={styles.gridItem}>
       <Text style={{ textAlign: "right" }}>{num}</Text>

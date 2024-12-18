@@ -8,12 +8,12 @@ import ModalExample from "../components/ModalExample";
 import React from "react";
 
 const Home = () => {
-  const [render, setIsRender] = useState(false);
+  const [isShow, setIsShow] = useState(false);
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      <Button onPress={() => setIsRender(!render)} title="render" />
-      {render ? (
+      <Button onPress={() => setIsShow((prev) => !prev)} title="render" />
+      {isShow ? (
         <>
           <Touches text="coba coba" />
           <BasicComponent />

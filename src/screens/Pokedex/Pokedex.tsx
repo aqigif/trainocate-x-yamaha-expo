@@ -1,7 +1,6 @@
 import { StaticScreenProps, useNavigation } from "@react-navigation/native";
 import {
   Image,
-  Pressable,
   SafeAreaView,
   ScrollView,
   Text,
@@ -48,7 +47,7 @@ const Pokedex = ({}: Props) => {
                 num={pokemon.id}
                 image={pokemon.image}
                 onPress={() =>
-                  navigation.navigate("PokemonDetail", { num: pokemon.id })
+                  navigation.navigate("PokemonDetail", { id: pokemon.id })
                 }
               />
             ))
