@@ -1,6 +1,6 @@
 import { AnyAction } from "@reduxjs/toolkit";
 import { IPokemon } from "../../types/pokemon";
-import { ADD_TO_MY_POKEMON } from "../actionTypes";
+import { ADD_TO_MY_POKEMON, DELETE_FROM_MY_POKEMON } from "../actionTypes";
 
 interface IStore {
   pokemons: IPokemon[];
@@ -22,6 +22,11 @@ export const myPokeReducer = (state = initialState, action: AnyAction) => {
         pokemons: [...state.pokemons, action.payload.pokemon] as IPokemon[],
       };
 
+    case DELETE_FROM_MY_POKEMON:
+      return {
+        ...state,
+        pokemons: state.pokemons.filter(item => item.id !== action.payload.id) as IPokemon[],
+      };
     default:
       return {
         ...state,

@@ -17,7 +17,7 @@ import IconButton from "../../components/IconButton";
 type Props = StaticScreenProps<{}>;
 
 const Pokedex = ({}: Props) => {
-  const { pokemons, myPokemons, addToMyPokemon } = usePokedex();
+  const { pokemons, myPokemons, addToMyPokemon, deleteFromMyPokemon } = usePokedex();
   const navigation = useNavigationType();
 
   return (
@@ -75,7 +75,7 @@ const Pokedex = ({}: Props) => {
                   navigation.navigate("PokemonDetail", { id: pokemon.id })
                 }
                 ActionComponent={
-                  <IconButton onPress={() => {}} backgroundColor={'red'}>
+                  <IconButton onPress={() => deleteFromMyPokemon(pokemon.id)} backgroundColor={'red'}>
                     <Text style={{ color: "white" }}>-</Text>
                   </IconButton>
                 }
