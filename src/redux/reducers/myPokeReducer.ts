@@ -14,18 +14,23 @@ const initialState: IStore = {
   pokemons: [],
 };
 
-export const myPokeReducer = (state = initialState, action: AnyAction) => {
+export const myPokeReducer = (
+  state = initialState,
+  action: AnyAction,
+) => {
+  const payload = action?.payload as unknown as IStore
+  
   switch (action.type) {
     case ADD_TO_MY_POKEMON:
       return {
         ...state,
-        pokemons: [...state.pokemons, action.payload.pokemon] as IPokemon[],
+        pokemons: payload.pokemons,
       };
 
     case DELETE_FROM_MY_POKEMON:
       return {
         ...state,
-        pokemons: state.pokemons.filter(item => item.id !== action.payload.id) as IPokemon[],
+        pokemons: payload.pokemons,
       };
     default:
       return {
