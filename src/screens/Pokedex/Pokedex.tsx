@@ -12,6 +12,7 @@ import usePokedex from "./Pokedex.handler";
 import React from "react";
 import { PokeCard } from "./components/PokeCard";
 import useNavigationType from "../../hooks/useNavigationType";
+import IconButton from "../../components/IconButton";
 
 type Props = StaticScreenProps<{}>;
 
@@ -46,17 +47,20 @@ const Pokedex = ({}: Props) => {
                 title={pokemon.name}
                 num={pokemon.id}
                 image={pokemon.image}
-                // onPress={() =>
-                //   navigation.navigate("PokemonDetail", { id: pokemon.id })
-                // }
-                onPress={() => {
-                  addToMyPokemon(pokemon)
-                }}
+                onPress={() =>
+                  navigation.navigate("PokemonDetail", { id: pokemon.id })
+                }
+                ActionComponent={
+                  <IconButton onPress={() => 
+                    addToMyPokemon(pokemon)} backgroundColor={'blue'}>
+                    <Text style={{ color: "white" }}>+</Text>
+                  </IconButton>
+                }
               />
             ))
           )}
         </View>
-        
+
         <Text>My Pokemon: </Text>
         <View style={styles.grid}>
           {myPokemons.length === 0 ? (
@@ -69,6 +73,11 @@ const Pokedex = ({}: Props) => {
                 image={pokemon.image}
                 onPress={() =>
                   navigation.navigate("PokemonDetail", { id: pokemon.id })
+                }
+                ActionComponent={
+                  <IconButton onPress={() => {}} backgroundColor={'red'}>
+                    <Text style={{ color: "white" }}>-</Text>
+                  </IconButton>
                 }
               />
             ))
